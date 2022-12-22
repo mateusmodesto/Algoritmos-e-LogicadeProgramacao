@@ -1,4 +1,6 @@
 Algoritmo "Bhaskara"
+//  
+//  
 
 Var
     A, B, C: inteiro
@@ -20,7 +22,15 @@ Inicio
      Delta <- B*B - 4*A*C
      R <- (-B + RaizQ(Delta))/Divisor
      Rn <- (-B - RaizQ(Delta))/Divisor
-     Escreval (" O valor de Delta é ", Delta)
+     Se (Delta > 0) entao
+        Escreval (" O valor de Delta é -",Delta, "e +",Delta)
+     FimSe
+     Se (Delta = 0) entao
+        Escreval ("O valor de Delta é o mesmo porém sinais diferentes.", " -",Delta, "e +",Delta )
+     FimSe
+     Se (Delta < 0) entao
+        Escreval ("O valor de Delta não existe nos números reias.")
+     FimSe
      Escreva (" O resultado de x é igual a: ", R , " e", Rn)
 
 

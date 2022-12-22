@@ -1,4 +1,6 @@
 Algoritmo "Transito"
+//  
+//  
 
 Var
      AnoAtual, AnodeNascimento, idade: inteiro
